@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="405dp"
+        android:layout_height="469dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="410dp"
+            android:layout_height="75dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txtViewGecmePuani"
+                android:layout_width="150dp"
+                android:layout_height="46dp"
+                android:text="Geçme Puanı:"
+                android:textAlignment="textEnd"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editTxtGecmePuani"
+                android:layout_width="258dp"
+                android:layout_height="55dp"
+                android:ems="10"
+                android:inputType="number|numberSigned"
+                tools:ignore="Autofill,LabelFor,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="409dp"
+            android:layout_height="62dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txtViewVizeNotu"
+                android:layout_width="149dp"
+                android:layout_height="44dp"
+                android:text="Vize Notu:"
+                android:textAlignment="textEnd"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editTxtVizeNotu"
+                android:layout_width="260dp"
+                android:layout_height="58dp"
+                android:ems="10"
+                android:inputType="number|numberSigned"
+                android:minHeight="48dp"
+                tools:ignore="Autofill,LabelFor,SpeakableTextPresentCheck" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="408dp"
+            android:layout_height="66dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txtViewVizeOrani"
+                android:layout_width="149dp"
+                android:layout_height="45dp"
+                android:text="Vize Oranı:"
+                android:textAlignment="textEnd"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editTxtVizeEtkisi"
+                android:layout_width="260dp"
+                android:layout_height="61dp"
+                android:layout_marginEnd="28dp"
+                android:layout_marginBottom="18dp"
+                android:ems="10"
+                android:inputType="number|numberSigned"
+                android:minHeight="48dp"
+                tools:ignore="Autofill,LabelFor,SpeakableTextPresentCheck" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="409dp"
+            android:layout_height="95dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="222dp"
+                android:layout_height="31dp" />
+
+            <Button
+                android:id="@+id/btnCalculate"
+                android:layout_width="180dp"
+                android:layout_height="59dp"
+                android:onClick="btnCalculate"
+                android:text="Hesapla"
+                tools:ignore="TouchTargetSizeCheck" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="409dp"
+            android:layout_height="52dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txtViewNeededFinalNotLabel"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:text="Finalden Almanız  Gereken Not :"
+                android:textAlignment="textEnd"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                tools:ignore="TextSizeCheck" />
+
+            <TextView
+                android:id="@+id/txtViewNeededFinalNot"
+                android:layout_width="255dp"
+                android:layout_height="50dp"
+                android:gravity="center|left"
+                android:text="100"
+                android:textAlignment="center"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                tools:ignore="TextSizeCheck" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
