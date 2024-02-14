@@ -13,5 +13,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "CalculateMarkApp"
+rootProject.name = "Üniversite Hesaplayıcıları"
 include(":app")

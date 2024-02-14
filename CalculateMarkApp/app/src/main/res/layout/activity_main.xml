@@ -8,6 +8,7 @@
     tools:context=".MainActivity">
 
     <LinearLayout
+        android:id="@+id/linearLayout4"
         android:layout_width="405dp"
         android:layout_height="469dp"
         android:orientation="vertical"
@@ -33,8 +34,8 @@
 
             <EditText
                 android:id="@+id/editTxtGecmePuani"
-                android:layout_width="258dp"
-                android:layout_height="55dp"
+                android:layout_width="252dp"
+                android:layout_height="57dp"
                 android:ems="10"
                 android:inputType="number|numberSigned"
                 tools:ignore="Autofill,LabelFor,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
@@ -58,8 +59,8 @@
 
             <EditText
                 android:id="@+id/editTxtVizeNotu"
-                android:layout_width="260dp"
-                android:layout_height="58dp"
+                android:layout_width="249dp"
+                android:layout_height="match_parent"
                 android:ems="10"
                 android:inputType="number|numberSigned"
                 android:minHeight="48dp"
@@ -83,8 +84,8 @@
 
             <EditText
                 android:id="@+id/editTxtVizeEtkisi"
-                android:layout_width="260dp"
-                android:layout_height="61dp"
+                android:layout_width="247dp"
+                android:layout_height="match_parent"
                 android:layout_marginEnd="28dp"
                 android:layout_marginBottom="18dp"
                 android:ems="10"
@@ -100,7 +101,7 @@
 
             <TextView
                 android:id="@+id/textView"
-                android:layout_width="222dp"
+                android:layout_width="202dp"
                 android:layout_height="31dp" />
 
             <Button
@@ -132,7 +133,6 @@
                 android:layout_width="255dp"
                 android:layout_height="50dp"
                 android:gravity="center|left"
-                android:text="100"
                 android:textAlignment="center"
                 android:textSize="16sp"
                 android:textStyle="bold"
